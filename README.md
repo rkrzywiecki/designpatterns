@@ -1,1 +1,1 @@
-test23444
+This repository is temporary - to test Typescript patterns
