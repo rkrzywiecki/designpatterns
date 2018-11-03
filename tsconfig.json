@@ -7,6 +7,8 @@
   "outFile": "patterns.js"
   },
 "files": [
-  "main.ts"
+  "main.ts",
+  "singleton/singleton.ts",
+	"singleton/demo.ts",
 ]
 }

@@ -1,3 +1,4 @@
+/// <reference path="singleton/demo.ts" />
 declare var require: (moduleId: string) => any;
 declare var process: any;
 var readline = require("readline");
@@ -41,13 +42,14 @@ namespace Patterns {
       input: process.stdin,
       output: process.stdout
     });
+    show(SingletonPattern);
 
-    printMenu();
-    rl.question("Which pattern would you like to check?   ", function(answer) {
-      switch (+answer) {
-        case 1:
-          // show(SingletonPattern);
-          // break;
+    // printMenu();
+    // rl.question("Which pattern would you like to check?   ", function(answer) {
+      // switch (+answer) {
+        // case 1:
+        //   show(SingletonPattern);
+        //   break;
         // case 2:
         //   show(AbstractFactoryPattern);
         //   break;
@@ -114,11 +116,11 @@ namespace Patterns {
         // case 23:
         //   show(VisitorPattern);
         //   break;
-        default:
-          break;
-      }
-      rl.close();
-    });
+      //   default:
+      //     break;
+      // }
+      // rl.close();
+    // });
   }
   function show(Pattern: any): void {
     Pattern.Demo.show();
